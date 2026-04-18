@@ -26,6 +26,7 @@ vim.opt.undofile = true
 vim.opt.inccommand = "split"
 
 -- UI
+vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"

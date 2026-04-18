@@ -20,8 +20,9 @@ return {
             })
 
             vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+                pattern = { "*.html", "*.css", "*.js", "*.ts", "*.jsx", "*.tsx", "*.vue", "*.svelte" },
                 callback = function()
-                    vim.cmd("ColorizerAttachToBuffer")
+                    nvchadcolorizer.attach_to_buffer(0)
                 end,
             })
 

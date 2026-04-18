@@ -36,7 +36,7 @@ return {
 			-- servers for mason to install
 			ensure_installed = {
 				"lua_ls",
-				"ts_ls", -- currently using a ts plugin
+				"ts_ls",
 				"html",
 				"cssls",
 				"tailwindcss",
@@ -44,20 +44,23 @@ return {
 				"angularls",
 				"emmet_ls",
 				"emmet_language_server",
-				-- "eslint",
 				"marksman",
-				-- C / C++
+				"clangd",
+				"rust_analyzer",
+				"zls",
 			},
 		})
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"prettier", -- prettier formatter
-				"stylua", -- lua formatter
-				"isort", -- python formatter
+				"prettier",
+				"stylua",
+				"isort",
 				"pylint",
-				"clangd",
 				"denols",
+				"rustfmt",
+				"goimports",
+				"codelldb",
 				-- { 'eslint_d', version = '13.1.2' },
 			},
 

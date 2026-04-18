@@ -40,9 +40,11 @@ return {
                     "query",
                     "vimdoc",
                     "c",
+                    "cpp",
                     "java",
                     "rust",
                     "ron",
+                    "zig",
                 },
                 incremental_selection = {
                     enable = true,

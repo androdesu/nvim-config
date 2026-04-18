@@ -187,5 +187,35 @@ return {
 			-- You can tweak more options later if you want
 		})
 		vim.lsp.enable("clangd")
+
+		-- zls (Zig)
+		vim.lsp.config("zls", {
+			settings = {
+				zls = {
+					enable_inlay_hints = true,
+					inlay_hints_show_builtin = true,
+					warn_style = true,
+				},
+			},
+		})
+		vim.lsp.enable("zls")
+
+		-- rust-analyzer (Rust)
+		vim.lsp.config("rust_analyzer", {
+			settings = {
+				["rust-analyzer"] = {
+					cargo = {
+						allFeatures = true,
+					},
+					checkOnSave = {
+						command = "clippy",
+					},
+					inlayHints = {
+						enable = true,
+					},
+				},
+			},
+		})
+		vim.lsp.enable("rust_analyzer")
 	end,
 }
